@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --violet: #6600CC;
+    --tengerine: #FFCC00;
+    --guardsmanred: #CC0000;
+}
+
+.violet{
+    color: var(--violet);
+}
+.violetbg{
+    background-color: transparent;
+}
+body{
+    color: white;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    border-bottom: 2px solid transparent;
+    padding: 4px;
+}
+a:hover{
+    border-bottom: 2px solid var(--violet);
+    transition: .5s ease-in;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+
+}
+
+.navLink{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.navLink li{
+    list-style: none;
+}
+
+/* hamburger design start*/
+
+.burger > div{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+    margin: 3px;
+    cursor: pointer;
+    transition: transform .3s ease-in ;
+}
+.burger{
+    display: none;
+}
+
+/* hero section design start */
+#hero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:120px;
+    align-items: center;
+}
+
+#hero img{
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+}
+
+#hero .content p{
+    margin-bottom: 2rem;
+    color: var(--violet);
+    font-weight: 600;
+}
+#hero .content h1{
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 3.4rem;
+}
+
+.heroBtn{
+    display: flex;
+
+}
+
+#hero .btn1{
+    padding: .5rem 1.5rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    outline: none;
+    margin-right: 1rem;
+    background-color: var(--violet);
+    color: white;
+    font-size: .8rem;
+    border: none;
+}
+#hero .btn2{
+    padding: .5rem 1.5rem;
+    border-radius: .8rem;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+    margin-right: 1rem;
+    background-color: transparent;
+    color: white;
+    font-size: .8rem;
+    
+}
+/* hero section design end */
+
+/* About styling starts */
+#about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:50px;
+    align-items: center;
+    margin-top: 40px;
+   
+    
+}
+
+#about button{
+    padding: .8rem 1.5rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    outline: none;
+    margin-right: 1rem;
+    background-color: var(--violet);
+    color: white;
+    font-size: .8rem;
+    border: none;
+}
+
+#about h1{
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 3.4rem;
+}
+
+#about img{
+    height: 270px;
+    width: 270px;
+}
+
+.about-content p{
+    margin-bottom: 1rem;
+}
+
+
+.about-dtls b{
+    width: 110px;
+}
+
+
+/* About styling ends */
+
+/* Service styling starts */
+.container{
+    margin: 80px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:25px;
+}
+.cards{
+    background-color: rgba(46, 43, 43, 0.2);
+    text-align: center;
+    padding: 40px;
+
+}
+.cards img{
+    height: 110px;
+}
+.cards p{
+    font-size: 1.8rem;
+}
+
+.cards div{
+    width: 60px;
+    height: 5px;
+    background-color: #6600CC;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    left: 45%;
+    border-radius: 3px;
+    
+}
+/* Service styling ends */
+
+@media screen and (max-width:1128px){
+    .navLink{
+        width: 70%;
+    }
+
+}
+
+
+@media screen and (max-width:928px){
+
+     .navLink{
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 13vh;
+        left:0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        height: 87vh;
+        transform: translateY(-120%);
+        transition: transform .5s ease-in ;
+    } 
+
+
+   .active{
+        transform: translateY(0)
+   }
+   .burger{
+    display: block;
+    }
+    .change .line1{
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .change .line2{
+        opacity: 0;
+    }
+    .change .line3{
+        transform: rotate(-45deg) translate(4px, -5px);
+    }
+
+}
+
