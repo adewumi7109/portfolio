@@ -1,3 +1,24 @@
+
+
+ScrollReveal().reveal('section', {
+    delay: 375,
+    duration: 1000,
+    reset: true
+});
+
+
+var slideUp = {
+   distance: '50%',
+   origin: 'left',
+   duration: 1000,
+   opacity: null
+};
+
+ScrollReveal().reveal('.container',  slideUp);
+ScrollReveal().reveal('p',  slideUp);
+
+
+
 var burger = document.getElementById('burger');
 var navlink = document.getElementById('navLink');
 
