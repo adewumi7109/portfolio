@@ -430,6 +430,7 @@ footer{
         height: 80vh;
         transform: translateY(-120%);
         transition: transform .5s ease-in ;
+        z-index: 999;
     } 
 
 
