@@ -50,6 +50,12 @@ nav{
 
 }
 
+nav .logo{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .navLink{
     display: flex;
     justify-content: space-around;
@@ -421,7 +427,7 @@ footer{
         right: 0;
         width: 100%;
         text-align: center;
-        height: 87vh;
+        height: 80vh;
         transform: translateY(-120%);
         transition: transform .5s ease-in ;
     } 
